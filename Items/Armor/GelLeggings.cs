@@ -10,7 +10,7 @@ namespace NientasEssentials.Items.Armor
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("long awaited Gel leggings!");
+			Tooltip.SetDefault("Long awaited Gel leggings!");
 		}
 
 		public override void SetDefaults()

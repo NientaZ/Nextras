@@ -12,7 +12,7 @@ namespace NientasEssentials.Items.Armor
 		{
 			base.SetStaticDefaults();
 			DisplayName.SetDefault("Gel Chestplate");
-			Tooltip.SetDefault("Thy long awaited Gel Chestplate!");
+			Tooltip.SetDefault("Long awaited Gel Chestplate!");
 		}
 
 		public override void SetDefaults()

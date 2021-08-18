@@ -10,7 +10,7 @@ namespace NientasEssentials.Items.Armor
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("The long awaited Gel Helmet!.");
+			Tooltip.SetDefault("Long awaited Gel Helmet!");
 		}
 
 		public override void SetDefaults()
