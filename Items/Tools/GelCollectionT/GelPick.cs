@@ -33,9 +33,7 @@ namespace NientasEssentials.Items.Tools.GelCollectionT
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 60);
-			recipe.AddIngredient(ItemID.Wood, 5);
-			recipe.AddIngredient(ItemID.CopperPickaxe, 1);
+			recipe.AddIngredient(mod.ItemType("MegaGel"), 2);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

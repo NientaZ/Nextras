@@ -11,7 +11,7 @@ namespace NientasEssentials.Items.Materials
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Mega Gel");
-			Tooltip.SetDefault("Combined!");
+			Tooltip.SetDefault("A true essential!");
 		}
 
 		public override void SetDefaults()
@@ -27,7 +27,7 @@ namespace NientasEssentials.Items.Materials
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 6);
+			recipe.AddIngredient(ItemID.Gel, 7);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

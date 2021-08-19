@@ -11,7 +11,7 @@ namespace NientasEssentials.Items.Consumables.GelCollectionC
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Gel Potion"); 
-			Tooltip.SetDefault("Embrace your inner-gel! Also to heal your mana...");
+			Tooltip.SetDefault("Embrace your inner-gel! Also to heal your mana.");
 		}
 
 		public override void SetDefaults()
@@ -34,7 +34,7 @@ namespace NientasEssentials.Items.Consumables.GelCollectionC
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 5);
+			recipe.AddIngredient(mod.ItemType("MegaGel"), 1);
 			recipe.AddIngredient(ItemID.LesserManaPotion, 1);
 			recipe.AddIngredient(ItemID.LesserHealingPotion, 1);
 			recipe.AddTile(TileID.WorkBenches);
