@@ -1,4 +1,4 @@
-Nextras v1.1.5.6 features...
+Nextras v1.1.5.7 features...
 
 --NEED WIKI DEVELOPERS! CONTACT ME ON DISCORD! (Link found below)--
 
@@ -7,6 +7,7 @@ New Features/fixes:
 2. Introducing Trophies, adding supporters and collaborators eventually.
 3. Introducing the long awaited Gel Armor! Snag a full set with MegaGel!
 4. Removed certain broken items..
+5. Balanced all crafting recipes, made a couple items easier to craft.
 
 Tweaked multiple features and balanced multiple features.
 
@@ -21,6 +22,8 @@ Current Features:
 6. Upgradeable Gel Candies
 
 -----------
+
+MegaGel is probably one of the most important items of this mod... keep it handy..
 
 This mod was made in a couple months as my first EVER official public mod!
 

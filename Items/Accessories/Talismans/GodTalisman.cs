@@ -28,11 +28,11 @@ namespace NientasEssentials.Items.Accessories.Talismans
 		public override void UpdateAccessory(Player player, bool hideVisual)
 		{
 			player.lavaImmune = true;
-			player.breathMax = 400;
-			player.fishingSkill = 75;
+			player.breathMax = 350;
+			player.fishingSkill = 60;
 			player.jumpSpeedBoost = 4f;
-			player.lifeRegenTime = 2;
-			player.lifeRegen = 40;
+			player.lifeRegenTime = 5;
+			player.lifeRegen = 20;
 			player.statDefense = 15;
 			player.moveSpeed = 1.5f;
 			player.manaRegen = 30;
@@ -41,7 +41,7 @@ namespace NientasEssentials.Items.Accessories.Talismans
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 30);
+			recipe.AddIngredient(mod.ItemType("MegaGel"), 5);
 			recipe.AddIngredient(mod.ItemType("BreathingTalisman"), 1);
 			recipe.AddIngredient(mod.ItemType("GravityTalisman"), 1);
 			recipe.AddIngredient(mod.ItemType("WorldTalisman"), 1);

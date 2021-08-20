@@ -45,7 +45,6 @@ namespace NientasEssentials.Items.Accessories.GelCollectionA
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Wood, 15);
 			recipe.AddIngredient(mod.ItemType("GravityTalisman"), 1);
 			recipe.AddIngredient(mod.ItemType("MegaGel"), 5);
 			recipe.SetResult(this);

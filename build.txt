@@ -1,4 +1,4 @@
 displayName = Nextras
 author = NientaZ#6084
-version = 1.1.5.6
+version = 1.1.5.7
 homepage = https://discord.gg/Rrxcz9d

@@ -32,9 +32,8 @@ namespace NientasEssentials.Items.Accessories.Talismans
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 15);
-			recipe.AddIngredient(ItemID.Wood, 5);
-			recipe.AddIngredient(ItemID.Diamond, 1);
+			recipe.AddIngredient(mod.ItemType("MegaGel"), 2);
+			recipe.AddIngredient(ItemID.GravitationPotion, 1);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
