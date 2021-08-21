@@ -21,7 +21,7 @@ namespace NientasEssentials.Items.Armor
 			item.height = 18;
 			item.value = 10000;
 			item.rare = ItemRarityID.Green;
-			item.defense = 8;
+			item.defense = 4;
 		}
 
 		public override void UpdateEquip(Player player)

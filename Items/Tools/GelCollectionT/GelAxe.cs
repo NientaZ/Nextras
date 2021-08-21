@@ -16,11 +16,11 @@ namespace NientasEssentials.Items.Tools.GelCollectionT
 
 		public override void SetDefaults()
 		{
-			item.axe = 25;
+			item.axe = 15;
 			item.damage = 6;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 40;
+			item.useTime = 60;
 			item.useAnimation = 20;
 			item.useStyle = 1;
 			item.knockBack = 6;

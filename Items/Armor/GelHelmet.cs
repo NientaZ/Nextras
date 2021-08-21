@@ -19,7 +19,7 @@ namespace NientasEssentials.Items.Armor
 			item.height = 18;
 			item.value = 10000;
 			item.rare = ItemRarityID.Green;
-			item.defense = 4;
+			item.defense = 1;
 		}
 
 		public override bool IsArmorSet(Item head, Item body, Item legs)

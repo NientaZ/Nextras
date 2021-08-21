@@ -10,17 +10,17 @@ namespace NientasEssentials.Items.Tools.WoodCollection
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Wooden Axe"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			DisplayName.SetDefault("Wooden Axe");
 			Tooltip.SetDefault("Because a wooden axe doesn't exist in vanilla...");
 		}
 
 		public override void SetDefaults()
 		{
-			item.axe = 30;
+			item.axe = 15;
 			item.damage = 3;
 			item.width = 40;
 			item.height = 40;
-			item.useTime = 50;
+			item.useTime = 70;
 			item.useAnimation = 27;
 			item.useStyle = 1;
 			item.knockBack = 2;
