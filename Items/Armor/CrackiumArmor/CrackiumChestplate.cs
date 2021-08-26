@@ -3,25 +3,25 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace NientasEssentials.Items.Armor
+namespace NientasEssentials.Items.Armor.CrackiumArmor
 {
 	[AutoloadEquip(EquipType.Body)]
-	public class GelChestplate : ModItem
+	public class CrackiumChestplate : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
 			base.SetStaticDefaults();
-			DisplayName.SetDefault("Gel Chestplate");
-			Tooltip.SetDefault("Long awaited Gel Chestplate!");
+			DisplayName.SetDefault("Crackium Chestplate");
+			Tooltip.SetDefault("Too powerful for your own good.");
 		}
 
 		public override void SetDefaults()
 		{
 			item.width = 18;
 			item.height = 18;
-			item.value = 10000;
-			item.rare = ItemRarityID.Green;
-			item.defense = 4;
+			item.value = 25000;
+			item.rare = ItemRarityID.LightPurple;
+			item.defense = 14;
 		}
 
 		public override void UpdateEquip(Player player)
@@ -32,8 +32,8 @@ namespace NientasEssentials.Items.Armor
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("MegaGel"), 5);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddIngredient(mod.ItemType("Crackium"), 15);
+			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

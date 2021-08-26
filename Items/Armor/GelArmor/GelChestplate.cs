@@ -1,16 +1,18 @@
 ﻿using NientasEssentials.Tiles;
 using Terraria;
-using Terraria.ModLoader;
 using Terraria.ID;
+using Terraria.ModLoader;
 
-namespace NientasEssentials.Items.Armor
+namespace NientasEssentials.Items.Armor.GelArmor
 {
-	[AutoloadEquip(EquipType.Legs)]
-	public class GelLeggings : ModItem
+	[AutoloadEquip(EquipType.Body)]
+	public class GelChestplate : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Long awaited Gel leggings!");
+			base.SetStaticDefaults();
+			DisplayName.SetDefault("Gel Chestplate");
+			Tooltip.SetDefault("Long awaited Gel Chestplate!");
 		}
 
 		public override void SetDefaults()
@@ -19,18 +21,18 @@ namespace NientasEssentials.Items.Armor
 			item.height = 18;
 			item.value = 10000;
 			item.rare = ItemRarityID.Green;
-			item.defense = 2;
+			item.defense = 4;
 		}
 
 		public override void UpdateEquip(Player player)
 		{
-			player.moveSpeed += 0.05f;
+			player.buffImmune[BuffID.Slow] = true;
 		}
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("MegaGel"), 3);
+			recipe.AddIngredient(mod.ItemType("MegaGel"), 5);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

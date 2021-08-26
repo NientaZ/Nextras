@@ -3,14 +3,14 @@ using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
 
-namespace NientasEssentials.Items.Armor
+namespace NientasEssentials.Items.Armor.GelArmor
 {
-	[AutoloadEquip(EquipType.Head)]
-	public class GelHelmet : ModItem
+	[AutoloadEquip(EquipType.Legs)]
+	public class GelLeggings : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Long awaited Gel Helmet!");
+			Tooltip.SetDefault("Long awaited Gel leggings!");
 		}
 
 		public override void SetDefaults()
@@ -19,19 +19,12 @@ namespace NientasEssentials.Items.Armor
 			item.height = 18;
 			item.value = 10000;
 			item.rare = ItemRarityID.Green;
-			item.defense = 1;
+			item.defense = 2;
 		}
 
-		public override bool IsArmorSet(Item head, Item body, Item legs)
+		public override void UpdateEquip(Player player)
 		{
-			return body.type == ModContent.ItemType<GelChestplate>() && legs.type == ModContent.ItemType<GelLeggings>();
-		}
-
-		public override void UpdateArmorSet(Player player)
-		{
-			player.setBonus = "Auto Jump";
-			player.allDamage -= 0.2f;
-			player.autoJump = true;
+			player.moveSpeed += 0.05f;
 		}
 
 		public override void AddRecipes()

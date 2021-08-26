@@ -17,7 +17,7 @@ namespace NientasEssentials.Items.Materials
 		public override void SetDefaults()
 		{
 			item.material = true;
-			item.maxStack = 99;
+			item.maxStack = 999;
 			item.width = 40;
 			item.height = 40;
 			item.value = 300;

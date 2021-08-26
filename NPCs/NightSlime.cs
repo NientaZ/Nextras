@@ -6,11 +6,11 @@ using Terraria.ModLoader;
 
 namespace NientasEssentials.NPCs
 {
-	public class MegaSlime : ModNPC
+	public class NightSlime : ModNPC
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Mega Slime");
+			DisplayName.SetDefault("Night Slime");
 			Main.npcFrameCount[npc.type] = 6;
 		}
 
@@ -19,9 +19,9 @@ namespace NientasEssentials.NPCs
 			npc.width = 32;
 			npc.height = 32;
 			npc.aiStyle = 1;
-			npc.damage = 20;
-			npc.defense = 3;
-			npc.lifeMax = 100;
+			npc.damage = 30;
+			npc.defense = 6;
+			npc.lifeMax = 40;
 			npc.HitSound = SoundID.NPCHit1;
 			npc.DeathSound = SoundID.NPCDeath1;
 			npc.value = 8000f;
@@ -31,17 +31,16 @@ namespace NientasEssentials.NPCs
 
 		public override float SpawnChance(NPCSpawnInfo spawnInfo)
 		{
-			return SpawnCondition.OverworldDaySlime.Chance * 0.05f;
+			return SpawnCondition.OverworldNightMonster.Chance * 0.30f;
 		}
 
         public override void NPCLoot()
         {
-			Item.NewItem(npc.getRect(), mod.ItemType("MegaGel"), 2);
+			Item.NewItem(npc.getRect(), mod.ItemType("MegaGel"), 4);
 			if (Main.rand.NextFloat() < .10f)
-				Item.NewItem(npc.getRect(), mod.ItemType("GravityTalisman"), 1);
-			if (Main.rand.NextFloat() < .15f)
+				Item.NewItem(npc.getRect(), mod.ItemType("WorldTalisman"), 1);
+			if (Main.rand.NextFloat() < .25f)
 				Item.NewItem(npc.getRect(), mod.ItemType("Crackium"), 1);
-
 		}
     }
 }
