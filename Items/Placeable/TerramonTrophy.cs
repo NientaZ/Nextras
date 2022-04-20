@@ -29,7 +29,7 @@ namespace NientasEssentials.Items.Placeable
 			recipe.AddIngredient(ItemID.Gel, 7);
 			recipe.AddIngredient(ItemID.GoldBar, 2);
 			recipe.AddIngredient(ItemID.Wood, 5);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(TileID.Anvils);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

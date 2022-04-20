@@ -28,7 +28,6 @@ namespace NientasEssentials.Items.Tools.WoodCollection
 			item.rare = 0;
 			item.UseSound = SoundID.Item1;
 			item.autoReuse = true;
-
 		}
 
 		public override void AddRecipes()

@@ -47,6 +47,7 @@ namespace NientasEssentials.Items.Accessories.GelCollectionA
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.ItemType("GravityTalisman"), 1);
 			recipe.AddIngredient(mod.ItemType("MegaGel"), 5);
+			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

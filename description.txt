@@ -1,4 +1,4 @@
-Nextras v1.1.6 features...
+Nextras v1.1.6.1 features...
 
 Join the discord :) https://discord.gg/Rrxcz9d
 
@@ -9,6 +9,8 @@ New Features/fixes:
 Crackium is a rare material dropped from any of my custom slimes. The harder the slime is, the higher the drop chance!
 4. New armor: Crackium Armor!
 Super strong armor crafted from Crackium!
+
+5...... Combinations.....
 
 Tweaked & Balanced multiple items
 

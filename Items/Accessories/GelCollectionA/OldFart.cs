@@ -32,5 +32,13 @@ namespace NientasEssentials.Items.Accessories.GelCollectionA
 			player.maxRunSpeed = 4f;
 			player.doubleJumpFart = true;
 		}
+		public override void AddRecipes()
+		{
+			ModRecipe recipe = new ModRecipe(mod);
+			recipe.AddIngredient(mod.ItemType("MegaGel"), 4);
+			recipe.AddTile(TileID.WorkBenches);
+			recipe.SetResult(this);
+			recipe.AddRecipe();
+		}
 	}
 }
