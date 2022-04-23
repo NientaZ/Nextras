@@ -2,6 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
+using NientasEssentials.Items.Tiles;
 
 namespace NientasEssentials.Items.Accessories.GelCollectionA
 {
@@ -47,7 +48,7 @@ namespace NientasEssentials.Items.Accessories.GelCollectionA
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.ItemType("GravityTalisman"), 1);
 			recipe.AddIngredient(mod.ItemType("MegaGel"), 5);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(ModContent.TileType<BlueWorkbench>());
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

@@ -1,33 +1,9 @@
-Nextras v1.1.6.1 features...
+Nextras v1.1.6.2
+
+Nextras (Formerly NientasEssentials) is a basic mod that adds new weapons, mobs, accessories, tools, and more!
+Nextras is designed, updated, and upkept by Nienta since early 2021.
+
+Partners:
+- Terramon
 
 Join the discord :) https://discord.gg/Rrxcz9d
-
-New Features/fixes:
-1. Gel Torches now work as intended (Underwater use)
-2. 2 New slime types! (Frail, night)
-3. New material: Crackium!
-Crackium is a rare material dropped from any of my custom slimes. The harder the slime is, the higher the drop chance!
-4. New armor: Crackium Armor!
-Super strong armor crafted from Crackium!
-
-5...... Combinations.....
-
-Tweaked & Balanced multiple items
-
------------
-
-Current Features:
-1. Gel armor, tools, weapons set
-2. Missing Wooden Tools that were removed from Vanila (Wood Pickaxe, Wood Axe)
-3. Talisman power accessories
-4. Gel Torch (works underwater!)
-5. Introducing Trophies (Exyl.. other supporters, collaborators)
-6. Upgradeable Gel Candies
-7. New slime types (1- Mega Slime)
-8. Crackium armor (very strong)
-
------------
-
-MegaGel is probably one of the most important items of this mod... keep it handy..
-
-If you want to support me, follow my twitter: https://twitter.com/ZNienta

@@ -38,8 +38,10 @@ namespace NientasEssentials.NPCs
         {
 			Item.NewItem(npc.getRect(), mod.ItemType("MegaGel"), 4);
 			if (Main.rand.NextFloat() < .10f)
-				Item.NewItem(npc.getRect(), mod.ItemType("WorldTalisman"), 1);
-			if (Main.rand.NextFloat() < .25f)
+				Item.NewItem(npc.getRect(), mod.ItemType("GelPellets"), 10);
+			if (Main.rand.NextFloat() < .05f)
+				Item.NewItem(npc.getRect(), mod.ItemType("CrackiumPellets"), 10);
+			if (Main.rand.NextFloat() < .12f)
 				Item.NewItem(npc.getRect(), mod.ItemType("Crackium"), 1);
 		}
     }

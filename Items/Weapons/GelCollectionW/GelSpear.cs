@@ -1,5 +1,6 @@
 using Terraria.ID;
 using Terraria.ModLoader;
+using NientasEssentials.Items.Tiles;
 
 namespace NientasEssentials.Items.Weapons.GelCollectionW
 {
@@ -30,10 +31,10 @@ namespace NientasEssentials.Items.Weapons.GelCollectionW
 		public override void AddRecipes() 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 35);
+			recipe.AddIngredient(mod.ItemType("MegaGel"), 5);
 			recipe.AddIngredient(ItemID.Wood, 5);
 			recipe.AddIngredient(ItemID.CopperShortsword, 1);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(ModContent.TileType<BlueWorkbench>());
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

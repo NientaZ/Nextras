@@ -2,6 +2,7 @@
 using Terraria;
 using Terraria.ModLoader;
 using Terraria.ID;
+using NientasEssentials.Items.Tiles;
 
 namespace NientasEssentials.Items.Armor.GelArmor
 {
@@ -30,8 +31,8 @@ namespace NientasEssentials.Items.Armor.GelArmor
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(mod.ItemType("MegaGel"), 3);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddIngredient(mod.ItemType("MegaGel"), 6);
+			recipe.AddTile(ModContent.TileType<BlueWorkbench>());
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using NientasEssentials.Items.Tiles;
 
 namespace NientasEssentials.Items.Consumables.GelCollectionC
 {
@@ -42,7 +43,7 @@ namespace NientasEssentials.Items.Consumables.GelCollectionC
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.ItemType("MegaGel"), 1);
 			recipe.AddIngredient(mod.ItemType("GelCandy"), 2);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(ModContent.TileType<BlueWorkbench>());
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

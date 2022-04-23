@@ -27,7 +27,7 @@ namespace NientasEssentials.Items.Materials
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.Gel, 7);
+			recipe.AddIngredient(ItemID.Gel, 6);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

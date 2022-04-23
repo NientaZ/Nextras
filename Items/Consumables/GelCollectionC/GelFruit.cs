@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using NientasEssentials.Items.Tiles;
 
 namespace NientasEssentials.Items.Consumables.GelCollectionC
 {
@@ -10,7 +11,7 @@ namespace NientasEssentials.Items.Consumables.GelCollectionC
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Gel Fruit"); // By default, capitalization in classnames will add spaces to the display name. You can customize the display name here by uncommenting this line.
+			DisplayName.SetDefault("Gel Fruit");
 			Tooltip.SetDefault("Gel Fruit is epic!");
 		}
 
@@ -36,7 +37,7 @@ namespace NientasEssentials.Items.Consumables.GelCollectionC
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod.ItemType("MegaGel"), 1);
 			recipe.AddIngredient(ItemID.LesserHealingPotion, 1);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(ModContent.TileType<BlueWorkbench>());
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

@@ -4,6 +4,7 @@ using System.Linq;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using NientasEssentials.Items.Tiles;
 
 namespace NientasEssentials.Items.Accessories.Talismans
 {
@@ -47,7 +48,7 @@ namespace NientasEssentials.Items.Accessories.Talismans
 			recipe.AddIngredient(mod.ItemType("WorldTalisman"), 1);
 			recipe.AddIngredient(mod.ItemType("HealthTalisman"), 1);
 			recipe.AddIngredient(mod.ItemType("FishingTalisman"), 1);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(ModContent.TileType<BlueWorkbench>());
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

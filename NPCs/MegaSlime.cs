@@ -37,9 +37,9 @@ namespace NientasEssentials.NPCs
         public override void NPCLoot()
         {
 			Item.NewItem(npc.getRect(), mod.ItemType("MegaGel"), 2);
-			if (Main.rand.NextFloat() < .10f)
-				Item.NewItem(npc.getRect(), mod.ItemType("GravityTalisman"), 1);
-			if (Main.rand.NextFloat() < .15f)
+			if (Main.rand.NextFloat() < .20f)
+				Item.NewItem(npc.getRect(), mod.ItemType("GelPellets"), 10);
+			if (Main.rand.NextFloat() < .05f)
 				Item.NewItem(npc.getRect(), mod.ItemType("Crackium"), 1);
 
 		}

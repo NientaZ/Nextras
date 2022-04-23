@@ -31,7 +31,7 @@ namespace NientasEssentials.NPCs
 
 		public override float SpawnChance(NPCSpawnInfo spawnInfo)
 		{
-			return SpawnCondition.OverworldDaySlime.Chance * 0.05f;
+			return SpawnCondition.OverworldDaySlime.Chance * 0.10f;
 		}
 
         public override void NPCLoot()
@@ -39,8 +39,10 @@ namespace NientasEssentials.NPCs
 			Item.NewItem(npc.getRect(), mod.ItemType("MegaGel"), 1);
 			if (Main.rand.NextFloat() < .05f)
 				Item.NewItem(npc.getRect(), mod.ItemType("OldFart"), 1);
-			if (Main.rand.NextFloat() < .15f)
+			if (Main.rand.NextFloat() < .07)
 				Item.NewItem(npc.getRect(), mod.ItemType("Crackium"), 1);
+			if (Main.rand.NextFloat() < .20f)
+				Item.NewItem(npc.getRect(), mod.ItemType("GelPellet"), 10);
 		}
     }
 }
